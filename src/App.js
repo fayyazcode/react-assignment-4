@@ -22,6 +22,23 @@ function ObjProp() {
   );
 }
 
+function ArrayProp() {
+  return (
+    <>
+      <span>
+        {data[0]}
+      </span>
+      <span>
+        {data[1]}
+      </span>
+      <span>
+        {data[2]}
+      </span>
+
+    </>);
+}
+
+
   
   
   export { Hello, ObjProp, ArrayProp ,ArrOfObj,ComplexArrObj};
