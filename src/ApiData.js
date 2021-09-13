@@ -836,7 +836,14 @@ function User() {
     let usersData = profile.map((data) => {
           let id= data.id
         
-    
+         let post= posts.map((pdata)=>{
+              if(id==pdata.userId){
+                return(<div>
+                    <h5>{pdata.title}</h5>
+                    <p>{pdata.body}</p>
+                </div>)
+              }
+          });
                 return(
                     <>
                     <div>
