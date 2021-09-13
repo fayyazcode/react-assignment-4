@@ -839,27 +839,27 @@ function User() {
          let post= posts.map((pdata)=>{
               if(id==pdata.userId){
                 return(<div className="card-text shadow rounded-top mb-4">
-                    <h5 className="list-group-item">{pdata.title}</h5>
-                    <p className="list-group-item">{pdata.body}</p>
+                    <h5 className="list-group-item p-4 text-light bg-dark text-center">{pdata.title}</h5>
+                    <p className="list-group-item p-4 ">{pdata.body}</p>
                 </div>)
               }
           });
                 return(
                     <>
-                    <div className="card  bg-light">
+                    <div className="card  bg-light p-4">
                     <h3  className="card-header ">
                         {data.name}
                     </h3>
-                 <div className="card-body">
-                 <div className="card-subtitle">
+                 <div className="card-body p-2">
+                 <div className="card-subtitle p-2">
                       <strong> UserName :</strong> {data.username}
                     </div>
-                    <p className="card-text"><strong>Address :</strong> {data.address.street+data.address.suite+data.address.city}</p>
+                    <p className="card-text p-2"><strong>Address :</strong> {data.address.street+data.address.suite+data.address.city}</p>
                     
                
-                    <h3 className="card-subtitle bg-light text-primary text-center">MyPosts</h3>
+                    <h3 className="card-header text-primary text-center p-2 ">MyPosts</h3>
                   <ul className="list-group list-group-flush">
-                  <li className="list-group-item "> {post}</li>
+                  <li className="list-group-item   "> {post}</li>
                   </ul>
                  </div>
                     

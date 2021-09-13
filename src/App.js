@@ -55,7 +55,7 @@ const complex = [{ company: 'XYZ', jobs: ['Javascript', 'React'] }, { company: '
 function ComplexArrObj() {
   const compObj = complex.map((data, id) =>
     <>
-      <div className="card-body">
+      <div className="card-body p-4">
         <h3 className="list-group-item">{data.company}</h3>
         <ul>
           <strong className="text-primary">Jobs</strong>
