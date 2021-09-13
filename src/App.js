@@ -48,7 +48,31 @@ function ArrOfObj (){
   }
   
   
+  const complex = [{ company: 'XYZ', jobs: ['Javascript', 'React'] }, { company: 'ABC', jobs: ['AngularJs', 'Ionic'] }]
+  function ComplexArrObj (){
+    const compObj=complex.map((data,id)=>
+    <>
+      <h3>{data.company}</h3>
+      <ul>
+      <strong>Jobs</strong>
+        <li  >
+          {data.jobs[0]}
+        </li>
+        <li >
+          {data.jobs[1]}
+        </li>
+      </ul>
+    </>
+    );
+    return(
+      <>
 
+ {compObj}
+ 
+      </>
+    );
+  }
+  
   
   
   export { Hello, ObjProp, ArrayProp ,ArrOfObj,ComplexArrObj};
