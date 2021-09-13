@@ -838,28 +838,31 @@ function User() {
         
          let post= posts.map((pdata)=>{
               if(id==pdata.userId){
-                return(<div>
-                    <h5>{pdata.title}</h5>
-                    <p>{pdata.body}</p>
+                return(<div className="card-text shadow rounded-top mb-4">
+                    <h5 className="list-group-item">{pdata.title}</h5>
+                    <p className="list-group-item">{pdata.body}</p>
                 </div>)
               }
           });
                 return(
                     <>
-                    <div>
-                    <h3>
+                    <div className="card  bg-light">
+                    <h3  className="card-header ">
                         {data.name}
                     </h3>
-                    <h4>
-                        {data.username}
-                    </h4>
-                    <p>{data.address.street+data.address.suite+data.address.city}</p>
+                 <div className="card-body">
+                 <div className="card-subtitle">
+                      <strong> UserName :</strong> {data.username}
+                    </div>
+                    <p className="card-text"><strong>Address :</strong> {data.address.street+data.address.suite+data.address.city}</p>
                     
-                </div>
-                <div>
-                    <h3>MyPosts</h3>
-                    {post}
-                    <hr />
+               
+                    <h3 className="card-subtitle bg-light text-primary text-center">MyPosts</h3>
+                  <ul className="list-group list-group-flush">
+                  <li className="list-group-item "> {post}</li>
+                  </ul>
+                 </div>
+                    
                 </div>
                     </>
                 );
@@ -867,7 +870,7 @@ function User() {
     )
     return (
        
-        <div>
+        <div >
             {usersData}
         </div>
         
