@@ -832,3 +832,39 @@ let profile = [
         }
     }
 ]
+function User() {
+    let usersData = profile.map((data) => {
+          let id= data.id
+        
+    
+                return(
+                    <>
+                    <div>
+                    <h3>
+                        {data.name}
+                    </h3>
+                    <h4>
+                        {data.username}
+                    </h4>
+                    <p>{data.address.street+data.address.suite+data.address.city}</p>
+                    
+                </div>
+                <div>
+                    <h3>MyPosts</h3>
+                    {post}
+                    <hr />
+                </div>
+                    </>
+                );
+        }
+    )
+    return (
+       
+        <div>
+            {usersData}
+        </div>
+        
+    );
+}
+
+export {User};
