@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './bootstrap.css'
 import {Hello,ObjProp,ArrayProp,ArrOfObj,ComplexArrObj} from './App';
 import ImportExp from './Qtwo';
 import {User} from './ApiData';
