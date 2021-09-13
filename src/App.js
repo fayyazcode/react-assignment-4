@@ -38,6 +38,16 @@ function ArrayProp() {
     </>);
 }
 
+const list = [{ name: "Hello World 1" }, { name: "Hello World 2" }, { name: "Hello World 3" }] //Show these in seperate tags
+function ArrOfObj (){
+  const listItem =list.map((data,id)=>
+  <li key={id}>{data.name}</li>)
+  return(
+    <ul>{listItem}</ul>
+    );
+  }
+  
+  
 
   
   
