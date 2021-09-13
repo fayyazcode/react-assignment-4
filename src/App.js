@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+
 import './App.css';
 
-function App() {
+const name = "Hello World";
+const obj = { name: "Hello World Object" }
+const data = ['We ', 'are ', 'United'] //Show these in seperate tags
+
+
+
+function Hello() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <p> {name}</p>
     </div>
   );
 }
+function ObjProp() {
+  return (
+    <>
+      <p>{obj.name}</p>
+    </>
+  );
+}
 
-export default App;
+  
+  
+  export { Hello, ObjProp, ArrayProp ,ArrOfObj,ComplexArrObj};
+  
